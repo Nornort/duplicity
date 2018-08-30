@@ -1,3 +1,55 @@
+2018-08-21  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Prep for 0.7.18.1
+
+2018-08-21  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fixed bug #1788558
+      - Treat None as zero when printing log.
+    * Revert fix for bug #1788599.
+      - Was causing problems with directory names
+
+2018-08-21  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fix a 2to3 error in ssh_paramiko_backend.py
+    * Merged in lp:~duplicity-team/duplicity/po-updates
+    * Prep for 0.7.18
+
+2018-08-11  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fixed bug #1785520 with patch from Chris Hunt
+      - Fix for B2 version 1.3.4 just released
+
+2018-07-08  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fixed bug #1780617 Test fail when GnuPG >= 2.2.8
+      - Relevant change in GnuPG 2.2.8: https://dev.gnupg.org/T3981
+      - Added '--ignore-mdc-error' to all gpg calls made.
+
+2018-05-07  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fixed bug #1717935 with suggestion from strainu
+      - Use urllib.quote_plus() to properly quote pathnames passed via URL
+
+2018-05-01  Kenneth Loafman  <kenneth@loafman.com>
+
+    * More fixes for bug #1734144
+      - Number of retries is now same as globals.num_retries.
+      - Added standoff delay of 0.5 sec per attempt.
+    * Fixed bug #1764432 with patch from Robke Geenen
+      - Just join the parts together.
+
+2018-04-04  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Partial fix of bug #1734144 with patch from Joris van Eijden
+      - Note: this is really just a partial fix for now, since it only covers
+        the case where the local size does not yet match the remote size.  A
+        case where -1 is the returned length is not fixed.
+
+2018-03-17  Kenneth Loafman  <kenneth@loafman.com>
+
+    * Fixed bug #1756550 Online html man page is showing a 0 byte file
+
 2018-02-26  Kenneth Loafman  <kenneth@loafman.com>
 
     * Fix update of Launchpad Translations.  Translations were not being picked

@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 # rdiffdir -- Extend rdiff functionality to directories
-# Version 0.7.17 released February 26, 2018
+# Version 0.7.18.1 released August 27, 2018
 #
 # Copyright 2002 Ben Escoto <ben@emerose.org>
 # Copyright 2007 Kenneth Loafman <kenneth@loafman.com>

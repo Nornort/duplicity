@@ -27,7 +27,7 @@ import socket
 
 
 # The current version of duplicity
-version = "0.7.17"
+version = "0.7.18.1"
 
 # Prefix for all files (appended before type-specific prefixes)
 file_prefix = ""
